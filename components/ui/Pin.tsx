@@ -18,7 +18,7 @@ export const PinContainer = ({
   containerClassName?: string;
 }) => {
   const [transform, setTransform] = useState(
-    "translate(-50%,-50%) rotateX(0deg)"
+    "translate(-50%,-50%) rotateX(0deg)",
   );
 
   const onMouseEnter = () => {
@@ -28,14 +28,28 @@ export const PinContainer = ({
     setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
   };
 
+  const openHref = () => {
+    if (!href) return;
+    window.open(href, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div
       className={cn(
         "relative group/pin z-50  cursor-pointer",
-        containerClassName
+        containerClassName,
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      onClick={openHref}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openHref();
+        }
+      }}
+      role="link"
+      tabIndex={0}
     >
       <div
         style={{

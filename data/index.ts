@@ -1,26 +1,15 @@
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "Sobre", link: "#about" },
+  { name: "Projetos", link: "#projects" },
+  { name: "Contato", link: "#contact" },
 ];
 
 export const gridItems = [
   {
-    id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
-  },
-  {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Pronta para colaborar com times de qualquer lugar.",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-4",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
@@ -28,9 +17,9 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    title: "Minhas tecnologias e frameworks",
+    description: "Estou em constante aprendizado.",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[40vh]",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
@@ -38,9 +27,9 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    title: "A melhor forma de prever o futuro é inventá-lo.",
+    description: "Alan Kay",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/grid.svg",
@@ -48,18 +37,8 @@ export const gridItems = [
   },
 
   {
-    id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
-  {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Vamos construir algo juntos?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -72,35 +51,36 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
+    title:
+      "Gediima - I Simpósio multidisciplinar de doenças inflamatórias intestinais",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    img: "/p1.png",
+    iconLists: ["/re.svg", "/tail.svg"],
+    link: "https://gediima.com.br/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
+    title: "Sequence",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    img: "/p2.png",
+    iconLists: ["/js.svg", "/ht.svg", "/vue.svg", "/re.svg", "/css.svg"],
+    link: "https://sequencetecnologia.com.br/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
+    title: "Belas Artes - Marmoraria",
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    img: "/p3.png",
+    iconLists: ["/re.svg", "/css.svg"],
+    link: "https://vanessadasilvasantos.github.io/belasartes/",
   },
   {
     id: 4,
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    img: "/p4.png",
+    iconLists: ["/re.svg", "/tail.svg"],
+    link: "https://vitoria-eight.vercel.app/",
   },
 ];
 
@@ -173,45 +153,61 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Desenvolvimento de Interfaces Modernas",
+    desc: "Criação de SPAs de alta performance utilizando React e Vite. Foco em arquitetura de componentes reutilizáveis e estados complexos com TypeScript.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Estrutura de Dados e Integrações",
+    desc: "Domínio em integração de APIs REST e modelagem de dados. Aplicação de boas práticas de Clean Code e lógica de programação para garantir sistemas escaláveis e fáceis de manter.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Estilização e Design System",
+    desc: "Implementação de layouts responsivos e interfaces pixel-perfect com Tailwind CSS. Experiência em transformar designs complexos do Figma em código limpo e otimizado.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Aplicações Mobile Multiplataforma",
+    desc: "Desenvolvimento nativo para iOS e Android utilizando React Native. Foco em performance, consumo de APIs e experiência do usuário (UX) fluida em dispositivos móveis.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
+];
+
+export const techStack = [
+  { img: "/re.svg", alt: "React" },
+  { img: "/ts.svg", alt: "TypeScript" },
+  { img: "/js.svg", alt: "JavaScript" },
+  { img: "/next.svg", alt: "Next.js" },
+  { img: "/tail.svg", alt: "Tailwind CSS" },
+  { img: "/css.svg", alt: "CSS" },
+  { img: "/ht.svg", alt: "HTML" },
+  { img: "/fm.svg", alt: "Framer Motion" },
+  { img: "/git.svg", alt: "Git" },
+  { img: "/rn.svg", alt: "React Native" },
 ];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/vanessadasilvasantos",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/wha.svg",
+    link: "https://wa.me/5598984332703",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/vanessa-da-s-santos-aa4a29267/",
   },
 ];
